@@ -1,0 +1,8 @@
+services:
+  warehouse_api:
+    build: .
+    image: warehouse_api
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
